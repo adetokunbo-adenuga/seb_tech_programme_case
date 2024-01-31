@@ -1,9 +1,13 @@
-import React from "react";
+import styles from "./header.module.css";
 
-export const Header = () => {
+const Header = () => {
   return (
     <header>
-      <h1>Header</h1>
+      <nav className={styles.nav}>
+        <h2>HEADER</h2>
+      </nav>
     </header>
   );
 };
+
+export default Header;
