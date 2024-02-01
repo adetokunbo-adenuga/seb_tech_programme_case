@@ -21,7 +21,9 @@ const Form = () => {
           <label>FÖRNAMN PÅ FÖRÄLDER: </label>
           <input type="text" name="förälder" />
         </div>
-        <input type="submit" className={script.button} value="Skicka" />
+        <div className={script.button}>
+          <input type="submit" value="Skicka" />
+        </div>
       </form>
     </div>
   );

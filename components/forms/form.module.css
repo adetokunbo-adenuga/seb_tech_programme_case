@@ -20,7 +20,16 @@
 }
 
 .button {
-  padding: 4px 32px;
-  background: #572203;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button input {
+  padding: 0.5em 1em;
+  border: none;
+  width: 50%;
+  background-color: #333;
+  font-weight: bold;
   color: #fff;
+  cursor: pointer;
 }
