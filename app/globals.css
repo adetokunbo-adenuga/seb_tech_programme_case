@@ -24,3 +24,16 @@ main {
   align-items: center;
   flex-direction: column;
 }
+
+header {
+  position: sticky;
+  top: 0;
+}
+footer {
+  margin-top: auto;
+}
+
+/* .form-container {
+  display: flex;
+  align-items: center;
+} */

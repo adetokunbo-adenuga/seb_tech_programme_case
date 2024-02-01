@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.line {
+  border: 1px solid #555;
+}
+
+.input_container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.input_container input {
+  height: 1.25em;
+}
+
+.button {
+  padding: 4px 32px;
+  background: #572203;
+  color: #fff;
+}
