@@ -23,7 +23,7 @@ const Form = () => {
 
     if (values.name.toLowerCase() === values.parentName.toLowerCase()) {
       alert(
-        "Name and Parent Name should be different. Please change Föräldernamn."
+        "Förnamn och Förälders förnamn bör vara olika. Vänligen ändra Förälders förnamn."
       );
     } else {
       router.push("/case");
@@ -41,7 +41,7 @@ const Form = () => {
             value={values.name}
             onChange={handleInputChange}
             required
-            placeholder="e.g John"
+            placeholder="t.ex John"
             pattern="^[a-zA-Z]+$"
           />
         </div>
@@ -51,7 +51,7 @@ const Form = () => {
             type="text"
             name="email"
             required
-            placeholder="e.g me@outlook.com"
+            placeholder="t.ex me@outlook.com"
             pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
           />
         </div>
@@ -59,9 +59,9 @@ const Form = () => {
           <label>POSTNUMMER: </label>
           <input
             type="text"
-            name="post-number"
+            name="postNumber"
             required
-            placeholder="e.g 12345 or 123 45"
+            placeholder="t.ex 12345 eller 123 45"
             pattern="^\d{5}$|^\d{3} \d{2}$"
           />
         </div>
@@ -74,7 +74,7 @@ const Form = () => {
             value={values.parentName}
             onChange={handleInputChange}
             required
-            placeholder="not the same as Förnamn"
+            placeholder="inte samma som förnamn"
             pattern="^[a-zA-Z]+$"
           />
         </div>

@@ -15,7 +15,7 @@
 }
 
 .input_container input {
-  height: 1.5em;
+  height: 1.75em;
 }
 
 .input_container label {
@@ -40,24 +40,13 @@
   cursor: pointer;
 }
 
+.button button:hover {
+  background-color: #43e97a;
+}
+
 /* For tablets and larger screens */
 @media (min-width: 768px) {
   .input_container {
     flex-direction: row;
   }
-
-  /* .input_container input {
-    width: 45%;
-  } */
-
-  .button input {
-    width: 45%;
-  }
 }
-
-/* For small screens (phones) 
-@media (max-width: 767px) {
-  .button input {
-    width: 100%;
-  }
-}*/
