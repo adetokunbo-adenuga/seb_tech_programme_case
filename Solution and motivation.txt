@@ -1,0 +1,14 @@
+SEB Tech programme 2024 case.
+
+I initiated the project by deliberating on whether to pursue a fundamental HTML, CSS, and JS approach or embrace the advantages of Next.js. After careful consideration, I opted for Next.js, attracted by its well-organized template that promised an easily maintainable solution for the given case.
+
+The initial step involved devising a clear file structure to enhance navigation for any user exploring the directory. Components were meticulously crafted to ensure seamless integration of header and footer elements, laying a solid foundation for future development. To maintain a cohesive design throughout the site, global CSS was employed, complemented by individualized styles for each component stored in the custom folder, aligning with the principle of easy maintenance.
+
+However, it's crucial to acknowledge the challenges encountered in adhering to WCAG Level 3 accessibility standards. Meeting these stringent guidelines posed difficulties, especially in ensuring a universally accessible user interface. The complexities associated with accommodating a diverse range of user needs necessitated meticulous attention to detail and a commitment to inclusivity. To this point, I did what I could to fulfil this objective, without going overboard.
+
+For validations, the primary focus was on HTML, supplemented by minimal JS usage to compare and display information such as the first name and the corresponding parent's first name in input fields. Rigorous testing was conducted on Firefox and Chrome browsers, confirming the correct functionality on both platforms.
+
+While certain elements in the code are presently hard-coded, the overall structure has been designed to facilitate straightforward refactoring. Notably, most input fields undergo validation through HTML attributes, contributing to a robust and reliable system.
+
+In addition, specific instructions were adhered to, emphasizing the importance of prioritizing accessibility features. These guidelines underscored the need for clear and concise labelling, semantic HTML structure, and the seamless integration of ARIA attributes to enhance screen reader compatibility. The project's adherence to these instructions reflects a commitment to creating an inclusive and accessible digital environment.
+
