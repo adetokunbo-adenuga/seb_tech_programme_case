@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header>
       <nav className={styles.nav}>
-        <h2>HEADER</h2>
+        <h3>HEADER</h3>
       </nav>
     </header>
   );

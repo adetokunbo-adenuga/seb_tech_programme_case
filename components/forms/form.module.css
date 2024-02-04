@@ -11,12 +11,16 @@
 .input_container {
   display: flex;
   justify-content: space-between;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding: 0.5em 0;
 }
 
 .input_container input {
-  height: 1.25em;
+  height: 1.5em;
+}
+
+.input_container label {
+  font-weight: bold;
+  color: #535252;
 }
 
 .button {
@@ -24,12 +28,36 @@
   justify-content: flex-end;
 }
 
-.button input {
+.button button {
   padding: 0.5em 1em;
+  margin: 0.5em 0 1em 0;
   border: none;
-  width: 50%;
-  background-color: #333;
+  width: 45%;
+  background-color: #e3e1e1;
+  border: #535252 solid 1px;
   font-weight: bold;
-  color: #fff;
+  color: #333;
   cursor: pointer;
 }
+
+/* For tablets and larger screens */
+@media (min-width: 768px) {
+  .input_container {
+    flex-direction: row;
+  }
+
+  /* .input_container input {
+    width: 45%;
+  } */
+
+  .button input {
+    width: 45%;
+  }
+}
+
+/* For small screens (phones) 
+@media (max-width: 767px) {
+  .button input {
+    width: 100%;
+  }
+}*/

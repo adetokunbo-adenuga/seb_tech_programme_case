@@ -21,7 +21,7 @@ main {
   padding: 2rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 
@@ -33,7 +33,16 @@ footer {
   margin-top: auto;
 }
 
-/* .form-container {
-  display: flex;
-  align-items: center;
-} */
+/* For tablets and larger screens */
+@media (min-width: 768px) {
+  main {
+    padding: 4rem 6rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main > * {
+    flex: 1;
+    max-width: 800px;
+    margin: 0.5rem;
+  }
+}

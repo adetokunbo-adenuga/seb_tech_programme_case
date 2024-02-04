@@ -1,6 +1,6 @@
 .nav {
-  background: #333;
-  color: #fff;
+  background: #abd0fa;
+  color: #333;
   position: sticky;
   top: 0;
   width: 100%;
@@ -9,4 +9,8 @@
   justify-content: center;
   flex-wrap: wrap;
   border-bottom: 1px solid #2c2c2c;
+}
+
+.nav h3 {
+  letter-spacing: 2px;
 }
