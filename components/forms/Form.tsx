@@ -32,9 +32,9 @@ const Form = () => {
 
   return (
     <div className={script.container}>
-      <form onSubmit={handleComparison}>
+      <form onSubmit={handleComparison} autoComplete="off">
         <div className={script.input_container}>
-          <label>FÖRNAMN: </label>
+          <label htmlFor="name">FÖRNAMN: </label>
           <input
             type="text"
             name="name"
@@ -46,28 +46,29 @@ const Form = () => {
           />
         </div>
         <div className={script.input_container}>
-          <label>E-POST: </label>
+          <label htmlFor="email">E-POST: </label>
           <input
-            type="text"
+            type="email"
             name="email"
             required
-            placeholder="t.ex me@outlook.com"
+            placeholder="t.ex me@company.com"
             pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
           />
         </div>
         <div className={script.input_container}>
-          <label>POSTNUMMER: </label>
+          <label htmlFor="postNumber">POSTNUMMER: </label>
           <input
             type="text"
             name="postNumber"
             required
-            placeholder="t.ex 12345 eller 123 45"
+            maxLength={6}
+            placeholder="t.ex xxxxx eller xxx xx"
             pattern="^\d{5}$|^\d{3} \d{2}$"
           />
         </div>
         <hr className={script.line} />
         <div className={script.input_container}>
-          <label>FÖRNAMN PÅ FÖRÄLDER: </label>
+          <label htmlFor="parentName">FÖRNAMN PÅ FÖRÄLDER: </label>
           <input
             type="text"
             name="parentName"
